@@ -1,0 +1,28 @@
+@use "sass:math";
+
+// Manage media query
+@mixin up($size) {
+  $size: strip-unit($size);
+  @media (min-width: $size + 1px) { @content; }
+}
+@mixin down($size) {
+  $size: strip-unit($size);
+  @media (max-width: $size + 1px) { @content; }
+}
+
+@mixin toRem($size) {
+    font-size: toRem($size);
+}
+
+
+// Animated underlined effect multiline height auto from font-size (%)
+@mixin underlined($color-one, $color-two, $height: 10%, $hover-width: 100%) {
+    display: inline;
+    text-decoration: none;
+    background: linear-gradient(to top, $color-one 0%, $color-two $height, transparent ($height + 0.1)) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.3s;
+    &:hover {
+        background-size: $hover-width 100%;
+    }
+}

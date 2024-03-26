@@ -1,0 +1,24 @@
+{
+    "name": "efil/locasion",
+    "type": "project",
+    "authors": [
+        {
+            "name": "capetrel",
+            "email": "capetrelluzzi@efil.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "vlucas/phpdotenv": "^5.6",
+        "ext-intl": "*",
+        "jenssegers/blade": "^2.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

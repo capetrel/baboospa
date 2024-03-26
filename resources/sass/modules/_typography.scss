@@ -1,0 +1,74 @@
+@import url("https://use.typekit.net/azw6yza.css");
+@import url("https://fonts.bunny.net/css?family=inter-tight:400,700");
+
+* {
+    font-family: 'Inter Tight', Arial, sans-serif;
+    font-size: var(--main-text);
+    font-weight: 400;
+}
+
+html {
+    %h1, h1, .h1 {
+        font-family: neue-kabel, Arial, sans-serif;
+        @include toRem(20px);
+        font-weight: 800;
+        color: var(--secondary);
+        line-height: 1;
+        text-align: center;
+    }
+    %h2, h2, .h2 {
+        font-family: neue-kabel, Arial, sans-serif;
+        @include toRem(20px);
+        font-weight: 800;
+        color: var(--secondary);
+        margin-bottom: var(--space);
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p, ul {
+        margin: 0 auto toRem(20) auto;
+    }
+    p + ul {
+        margin-top: toRem(-15);
+        margin-bottom: toRem(15);
+    }
+    p {
+        &.dashed {
+            position: relative;
+            &:after {
+                content: '\2014';
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                right: 0;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    strong {
+        font-family: 'Inter Tight', Arial, sans-serif;
+        font-weight: 700;
+        font-size: inherit;
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        @include underlined(var(--primary), var(--primary), 5.5%)
+    }
+    sup, sub {
+        position: relative;
+        font-size: toRem(12px);
+        line-height: 1.1;
+    }
+    sup {
+        top: -2px;
+        vertical-align: super;
+    }
+    sub {
+        bottom: -2px;
+        vertical-align: sub;
+    }
+}

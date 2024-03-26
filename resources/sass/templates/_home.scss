@@ -1,0 +1,42 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: toRem(35);
+  .logo {
+    width: 240px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.intro {
+  text-align: center;
+}
+.references {
+  font-size: toRem(14);
+  border-top: solid 1px var(--primary);
+  border-bottom: solid 1px var(--primary);
+  padding-top: toRem(15);
+  padding-bottom: toRem(15);
+  text-align: center;
+  p, span {
+    font-size: inherit;
+    margin: 0;
+  }
+}
+
+.contact {
+  .arrowed {
+    position: relative;
+    .arrow {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+      width: 28px;
+      height: 14px;
+      margin: 0 auto;
+      animation: MoveUpDown .7s ease-in-out infinite;
+    }
+  }
+}

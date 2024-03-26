@@ -1,0 +1,8 @@
+/.idea
+/cache/*
+/node_modules
+/public/assets
+/public/.htaccess.prod
+/public/.htpasswd
+.env
+/vendor
