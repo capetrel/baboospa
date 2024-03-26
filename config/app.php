@@ -6,7 +6,7 @@ return [
     'local' => 'fr_FR',
     'site' => [
         'name' => 'Single app',
-        'url' => isset($_ENV['APP_DOMAIN']) && $_ENV['APP_DOMAIN'] ? 'http://' . $_ENV['APP_DOMAIN'] : 'https://www.locasion.fr',
+        'url' => isset($_ENV['APP_DOMAIN']) && $_ENV['APP_DOMAIN'] ? 'http://' . $_ENV['APP_DOMAIN'] : 'https://www.exmaple.prod',
         'slogan' => 'Mon super slogan.',
         'description' => 'Aliquam aperiam commodi corporis cumque, doloribus eveniet excepturi exercitationem expedita hic ipsum itaque nisi pariatur quibusdam quo rem soluta ullam.',
         'social_img_name' => 'social-share',
